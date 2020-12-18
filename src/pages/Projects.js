@@ -10,15 +10,40 @@ const Projects = (props) => {
          project =>{
            return(
            
-             <div className="col-9 mx-auto col-md-6 col-lg-3" >
-               <div className="card" key={project.id}>
-                   <div className="img-container p-5 " onClick={()=>console.log("You clicked")}>
-                    
-                    <img src={project.image} className="navbar-brand"  alt="project" className="card-img-top"/>
-                    {project.body}
-                   </div>
-               </div>              
-            </div>
+            
+             
+                 
+                  <div class="col-lg-4 col-md-12 mb-4">
+  
+                      
+                      <div class="card">
+  
+                          
+                          <div class="view overlay">
+                              <img src={project.image} class="card-img-top" alt=""/>
+                              <a href="https://mdbootstrap.com/angular/" target="_blank">
+                                  <div class="mask rgba-white-slight"></div>
+                              </a>
+                          </div>
+  
+                          
+                          <div class="card-body">
+                              
+                              <h4 class="card-title">{project.title}</h4>
+                              
+                              <p class="card-text">Built with Angular 5, Bootstrap 4 and TypeScript. CLI version available. </p>
+                              <a href=""  class="btn btn-primary btn-md">More
+                                  <i class="fas fa-download ml-2"></i>
+                              </a>
+                          </div>
+  
+                      </div>
+                      
+  
+                  </div>
+                 
+  
+                
             
            )
          }
